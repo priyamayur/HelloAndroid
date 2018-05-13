@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".MainActivity"
+    android:background="@color/colorBlack">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width1"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/udacity_only" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view1"
+            android:layout_width="@dimen/width1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            card_view:cardCornerRadius="@dimen/width2"
+            android:layout_marginLeft="@dimen/width3"
+            android:layout_marginTop="@dimen/width3"
+            android:layout_marginBottom="@dimen/width3"
+            card_view:cardBackgroundColor="@color/colorgreen"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="@dimen/width2"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <Button
+                    android:layout_width="@dimen/width4"
+                    android:layout_height="@dimen/width4"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/width5"
+                    android:background="@drawable/button_udacity"
+                    android:onClick="website"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/stardos_stencil"
+                    android:text="@string/udacity1"
+                    android:textColor="#000000"
+
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view2"
+            android:layout_width="@dimen/width1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            card_view:cardCornerRadius="@dimen/width2"
+            android:layout_marginLeft="@dimen/width3"
+            android:layout_marginTop="@dimen/width3"
+            card_view:cardBackgroundColor="@color/colorgreen"
+            android:layout_marginBottom="@dimen/width3"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="@dimen/width2"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="@dimen/width4"
+                    android:layout_height="@dimen/width4"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/width5"
+                    android:background="@drawable/button_phone"
+                    android:onClick="phone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/phone"
+                    android:layout_margin="@dimen/width3"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorBlack"
+
+                    android:fontFamily="@font/stardos_stencil"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view3"
+            android:layout_width="@dimen/width1"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/width3"
+            card_view:cardCornerRadius="@dimen/width2"
+            card_view:cardBackgroundColor="@color/colorgreen"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="@dimen/width2"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="@dimen/width4"
+                    android:layout_height="@dimen/width4"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/width5"
+                    android:onClick="location"
+                    android:background="@drawable/button_map" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/width3"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/stardos_stencil"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>
+

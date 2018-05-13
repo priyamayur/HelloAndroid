@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HelloAndroid</string>
+    <string name="udacity1">Join Udacity and upskill with a Nanodegree Program</string>
+    <string name="udacity2">Get ready for the jobs of today and tomorrow</string>
+    <string name="address">2465 Latham St \n Mountain View,CA 94043</string>
+    <string name="phone">650-555-5555</string>
+
+
+</resources>
